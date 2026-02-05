@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuwan Singh</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-name">BHUWAN SINGH</span>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <!-- <a href="#about" class="nav-link">About Me</a>
+                <a href="#skills" class="nav-link">Sketches</a>
+                <a href="#portfolio" class="nav-link">Research Papers</a> -->
+                <a href="#contact" class="nav-link">Contact</a>
+                <!-- <button class="download-cv-btn">Download CV</button> -->
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-greeting">Hi I am</h2>
+                    <h1 class="hero-name">Bhuwan Singh</h1>
+                    <h1 class="hero-title">Sketch Artist</h1>
+                    <p class="hero-description">
+                        Welcome to my space! I’m Bhuwan Singh , and I love expressing myself through art, where I’ve
+                        been lucky to win awards at events like IAC, Veergatha 2.0, and ISTF. But my passions don’t stop
+                        there—I’ve also earned national recognition in Round Square, received the Constantine Award, and
+                        even presented a winning research paper on geosteering. Outside of all this, I enjoy staying
+                        active and playing sports whenever I can.
+                    </p>
+                    <button class="contact-btn">Contact</button>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <!-- Profile image placeholder - replace with actual image -->
+                        <div class="image-placeholder">
+                            <img src="bhuwan-2.jpg" alt="main-pic" width="300" height="400">
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <!-- <a href="#" class="social-link"><i class="fab fa-facebook"></i></a> -->
+                        <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/bhuwansingh_9?igsh=NDN1aGoxazgzMTEz&utm_source=qr"
+                            class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bhuwan-singh-b46a3b344/" class="social-link"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/916230229856" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <div class="interests-content">
+                <div class="interests-image">
+                    <div class="profile-image-2">
+                        <!-- Second profile image placeholder -->
+                        <div class="image-placeholder-2">
+                            <img src="qwerty.png" alt="main-pic" width="360" height="350">
+                        </div>
+                    </div>
+                </div>
+                <div class="interests-info">
+                    <h2 class="section-title">My Interests</h2>
+                    <p class="interests-description">
+                        My interests are an extension of my problem-solving mindset and drive for continuous improvement. The analytical thinking I use in quizzing and football directly informs my engineering work, while sketching sharpens my attention to detail and creative vision. These activities are where I hone the teamwork, discipline, and focus I apply to all my endeavors.
+                    </p>
+                    <div class="skills-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Engineering</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Quizzes</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Football</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Sketching</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arts/Services Section -->
+    <section id="arts" class="arts">
+        <div class="container">
+            <h2 class="section-title">My Arts</h2>
+            <p class="section-description">
+                This gallery is a collection of moments and ideas translated onto paper. For me, sketching is a powerful
+                medium for observation and creative expression, a way to explore the interplay of light, shadow, and
+                form. Each piece represents a quiet moment of focus and a passion for bringing imagination to life.
+            </p>
+
+            <!-- Sketch Gallery Grid -->
+            <div class="sketch-gallery">
+                <div class="sketch-item" onclick="openModal(this)">
+                    <img src="s1.jpg" alt="Portrait Sketch" class="sketch-image">
+                    <div class="sketch-overlay">
+                        <div class="sketch-info">
+                            <h3 class="sketch-title">Heroic Gaze</h3>
+                            <p class="sketch-medium">Sketch</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sketch-item" onclick="openModal(this)">
+                    <img src="s2.jpg" alt="Nature Sketch" class="sketch-image">
+                    <div class="sketch-overlay">
+                        <div class="sketch-info">
+                            <h3 class="sketch-title">Maryada Purushottam</h3>
+                            <p class="sketch-medium">Arun Govil as Lord Rama</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sketch-item" onclick="openModal(this)">
+                    <img src="s3.jpg" alt="Abstract Sketch" class="sketch-image">
+                    <div class="sketch-overlay">
+                        <div class="sketch-info">
+                            <h3 class="sketch-title">A Study in Realism</h3>
+                            <p class="sketch-medium">Shadow and Light</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sketch-item" onclick="openModal(this)">
+                    <img src="s4.jpg" alt="Architecture Sketch" class="sketch-image">
+                    <div class="sketch-overlay">
+                        <div class="sketch-info">
+                            <h3 class="sketch-title">The Ramayana Within</h3>
+                            <p class="sketch-medium">Ink on Paper</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sketch-item" onclick="openModal(this)">
+                    <img src="s5.jpg" alt="Animal Sketch" class="sketch-image">
+                    <div class="sketch-overlay">
+                        <div class="sketch-info">
+                            <h3 class="sketch-title">Vighnaharta</h3>
+                            <p class="sketch-medium">Graphite on Paper</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sketch-item" onclick="openModal(this)">
+                    <img src="s6.jpg" alt="Still Life Sketch" class="sketch-image">
+                    <div class="sketch-overlay">
+                        <div class="sketch-info">
+                            <h3 class="sketch-title">Vulnerability</h3>
+                            <p class="sketch-medium">Freckles</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Expanded View -->
+        <div id="sketchModal" class="sketch-modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <img id="modalImage" class="modal-image" src="" alt="">
+                <div class="modal-info">
+                    <h3 id="modalTitle" class="modal-title"></h3>
+                    <p id="modalMedium" class="modal-medium"></p>
+                </div>
+                <div class="modal-navigation">
+                    <button class="nav-btn prev-btn" onclick="previousImage()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn next-btn" onclick="nextImage()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Accomplishments/Portfolio Section -->
+    <section id="accomplishments" class="accomplishments">
+        <div class="container">
+            <h2 class="section-title">My Accomplishments</h2>
+            <p class="section-description">
+                Success, for me, is measured by the impact and value one can create. Below is a curated list of my key
+                achievements, from delivering successful projects to receiving academic and professional recognition.
+                Each one stands as a testament to my ability to solve complex problems and contribute meaningfully to a
+                team.
+            </p>
+
+            <!-- Filter Buttons -->
+            <!-- <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="debates">Debates</button>
+            <button class="filter-btn" data-filter="college-fest">College Fest</button>
+            <button class="filter-btn" data-filter="sketches">Sketches</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+        </div> -->
+
+            <!-- Accomplishments Gallery -->
+            <div class="accomplishments-gallery">
+                <div class="accomplishment-item" data-category="debates" onclick="openAccomplishmentModal(this)">
+                    <img src="a1.jpg" alt="Debate Championship Certificate" class="accomplishment-image">
+                    <div class="accomplishment-overlay">
+                        <div class="accomplishment-info">
+                            <h3 class="accomplishment-title">Constantine Award Nationals</h3>
+                            <!-- <p class="accomplishment-category">Debates</p> -->
+                            <p class="accomplishment-year">2023</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accomplishment-item" data-category="college-fest" onclick="openAccomplishmentModal(this)">
+                    <img src="a2.jpg" alt="College Fest Gold Medal" class="accomplishment-image">
+                    <div class="accomplishment-overlay">
+                        <div class="accomplishment-info">
+                            <h3 class="accomplishment-title">IAC Season 14</h3>
+                            <!-- <p class="accomplishment-category">College Fest</p> -->
+                            <p class="accomplishment-year">2025</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accomplishment-item" data-category="sketches" onclick="openAccomplishmentModal(this)">
+                    <img src="a3.jpg" alt="Art Competition Certificate" class="accomplishment-image">
+                    <div class="accomplishment-overlay">
+                        <div class="accomplishment-info">
+                            <h3 class="accomplishment-title">ISTF Nationals</h3>
+                            <!-- <p class="accomplishment-category">Sketches</p> -->
+                            <p class="accomplishment-year">2021</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accomplishment-item" data-category="sketches" onclick="openAccomplishmentModal(this)">
+                    <img src="a4.jpg" alt="Sports Championship Trophy" class="accomplishment-image">
+                    <div class="accomplishment-overlay">
+                        <div class="accomplishment-info">
+                            <h3 class="accomplishment-title">UPES SPE Fest</h3>
+                            <!-- <p class="accomplishment-category">Sports</p> -->
+                            <p class="accomplishment-year">2025</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accomplishment-item" data-category="debates" onclick="openAccomplishmentModal(this)">
+                    <img src="a5.jpg" alt="Constantine Award" class="accomplishment-image">
+                    <div class="accomplishment-overlay">
+                        <div class="accomplishment-info">
+                            <h3 class="accomplishment-title">UPES SPE Fest</h3>
+                            <!-- <p class="accomplishment-category">Debates</p> -->
+                            <p class="accomplishment-year">2025</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accomplishment-item" data-category="college-fest" onclick="openAccomplishmentModal(this)">
+                    <img src="a6.jpg" alt="Research Paper Certificate" class="accomplishment-image">
+                    <div class="accomplishment-overlay">
+                        <div class="accomplishment-info">
+                            <h3 class="accomplishment-title">UPES SPE Fest</h3>
+                            <!-- <p class="accomplishment-category">Academic</p> -->
+                            <p class="accomplishment-year">2025</p>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Expanded View -->
+        <div id="accomplishmentModal" class="accomplishment-modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeAccomplishmentModal()">&times;</span>
+                <img id="accomplishmentModalImage" class="modal-image" src="" alt="">
+                <div class="modal-info">
+                    <h3 id="accomplishmentModalTitle" class="modal-title"></h3>
+                    <p id="accomplishmentModalCategory" class="modal-category"></p>
+                    <p id="accomplishmentModalYear" class="modal-year"></p>
+                </div>
+                <div class="modal-navigation">
+                    <button class="nav-btn prev-btn" onclick="previousAccomplishment()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn next-btn" onclick="nextAccomplishment()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <p class="section-description">
+                Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec
+                morbi convallis pretium
+            </p>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-avatar">
+                            <div class="avatar-placeholder"></div>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                "Lorem ipsum dolor sit amet consectetur. Ac rutrum hendrerit egestas vulputate
+                                scelerisque lacinia viverra. Quis arcu et orci distinctio lorem consectetur adipiscing
+                                elit eu quis ut. Quis consequat id fermentum, et orci commodo risus sed molestie dictum.
+                                Turpis dolor sed mauris felis arcu lectus sagittis consectetur adipiscing ipsum..."
+                            </p>
+                            <div class="testimonial-author">
+                                <strong>Name</strong>
+                                <span>CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+    <!-- Testimonial Navigation Dots -->
+    <!-- <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-description">
+                I believe that the best work comes from passionate collaboration and a shared vision. I am always on the
+                lookout for exciting opportunities to work with creative teams and ambitious individuals. If you have a
+                project that challenges the status quo or an idea that you believe in, I would be thrilled to connect
+                and explore how my skills can help bring it to life.
+            </p>
+            <div class="contact-info">
+                <a href="mailto:bhuwansinghatm@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    bhuwansinghatm@gmail.com
+                </a>
+                <br>
+                <a href="tel:+916230229856" class="contact-link">
+                    <i class="fas fa-phone"></i>
+                    +91 62302 29856
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Bhuwan Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
